@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://grafika/bg.png" type="Texture" id=1]
+[ext_resource path="res://src/Proba_2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Proba_1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Levels.gd" type="Script" id=4]
+[ext_resource path="res://grafika/probna_strefa.png" type="Texture" id=5]
+[ext_resource path="res://grafika/back.png" type="Texture" id=6]
+
+[node name="Levels" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 400.0
+margin_bottom = 712.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( 16, 72 )
+scale = Vector2( 1, 0.928 )
+normal = ExtResource( 5 )
+pressed = ExtResource( 5 )
+
+[node name="Proba_1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 152, 296 )
+
+[node name="Proba_2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 304, 296 )
+
+[node name="back" type="TouchScreenButton" parent="."]
+position = Vector2( 24, 560 )
+normal = ExtResource( 6 )
+pressed = ExtResource( 6 )
+[connection signal="pressed" from="TouchScreenButton" to="." method="_on_TouchScreenButton_pressed"]
+[connection signal="released" from="TouchScreenButton" to="." method="_on_TouchScreenButton_released"]
+[connection signal="released" from="back" to="." method="_on_back_released"]
