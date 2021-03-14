@@ -4,7 +4,7 @@
 [ext_resource path="res://src/Proba_2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Proba_1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Levels.gd" type="Script" id=4]
-[ext_resource path="res://grafika/probna_strefa.png" type="Texture" id=5]
+[ext_resource path="res://grafika/strefa_nacisku.png" type="Texture" id=5]
 [ext_resource path="res://grafika/back.png" type="Texture" id=6]
 
 [node name="Levels" type="Node2D"]
@@ -25,10 +25,10 @@ normal = ExtResource( 5 )
 pressed = ExtResource( 5 )
 
 [node name="Proba_1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 152, 296 )
+position = Vector2( -8, 136 )
 
 [node name="Proba_2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 304, 296 )
+position = Vector2( 304, 136 )
 
 [node name="back" type="TouchScreenButton" parent="."]
 position = Vector2( 24, 560 )

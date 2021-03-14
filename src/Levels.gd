@@ -8,10 +8,11 @@ var pos_2
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_process(false)
-	$Proba_1.position.x = 175
-	$Proba_2.position.x = 575
-	pos_1 = 175
-	pos_2 = 575
+	$Proba_1.position.x = 0
+	$Proba_2.position.x = 400
+	pos_1 = 0
+	pos_2 = 400
+	print(get_tree().get_root().get_node("Levels/Proba_1/kontener").name)
 
 
 func _on_TouchScreenButton_pressed():
@@ -22,10 +23,10 @@ func _on_TouchScreenButton_released():
 	set_process(false)
 	$Proba_1.position.x = pos_1
 	$Proba_2.position.x = pos_2
-	if(pos-get_local_mouse_position().x >= 100 and pos_2 >= 575):
+	if(pos-get_local_mouse_position().x >= 100 and pos_2 >= 400):
 		pos_1 -= 400
 		pos_2 -= 400
-	elif(get_local_mouse_position().x - pos >= 100 and pos_1 < 175):
+	elif(get_local_mouse_position().x - pos >= 100 and pos_1 < 0):
 		pos_1 += 400
 		pos_2 += 400
 	$Proba_1.position.x = pos_1

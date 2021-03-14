@@ -8,16 +8,26 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "level_screen",
+"language": "GDScript",
+"path": "res://src/level_screen.gd"
+} ]
 _global_script_class_icons={
-
+"level_screen": ""
 }
 
 [application]
 
 config/name="commath"
 run/main_scene="res://src/Menu.tscn"
+config/use_custom_user_dir=true
 config/icon="res://icon.png"
+
+[autoload]
+
+autoload="*res://src/autoload.gd"
 
 [display]
 
