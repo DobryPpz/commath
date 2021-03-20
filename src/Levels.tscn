@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://grafika/bg.png" type="Texture" id=1]
 [ext_resource path="res://src/Proba_2.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/Levels.gd" type="Script" id=4]
 [ext_resource path="res://grafika/strefa_nacisku.png" type="Texture" id=5]
 [ext_resource path="res://grafika/back.png" type="Texture" id=6]
+[ext_resource path="res://src/wskazniki.gd" type="Script" id=7]
 
 [node name="Levels" type="Node2D"]
 script = ExtResource( 4 )
@@ -34,6 +35,9 @@ position = Vector2( 304, 136 )
 position = Vector2( 24, 560 )
 normal = ExtResource( 6 )
 pressed = ExtResource( 6 )
+
+[node name="wskazniki" type="Node2D" parent="."]
+script = ExtResource( 7 )
 [connection signal="pressed" from="TouchScreenButton" to="." method="_on_TouchScreenButton_pressed"]
 [connection signal="released" from="TouchScreenButton" to="." method="_on_TouchScreenButton_released"]
 [connection signal="released" from="back" to="." method="_on_back_released"]
