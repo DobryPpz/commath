@@ -21,4 +21,9 @@ func _on_exit_released():
 
 
 func _on_play_released():
-	get_tree().change_scene("res://src/Levels.tscn")
+	AudioMenu.play()
+	get_tree().change_scene("res://src/Tryb.tscn")
+
+func _on_music_released():
+	AudioMenu.play()
+

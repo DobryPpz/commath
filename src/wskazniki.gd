@@ -23,15 +23,15 @@ func move_left():
 		pozycja -= 1
 		for i in range(1,autoload.licza_prob+1):
 			if(i == pozycja):
-				get_child(i-1).set_texture(czarny)
+				get_child(i-1).get_child(0).set_texture(czarny)
 			else:
-				get_child(i-1).set_texture(szary)
+				get_child(i-1).get_child(0).set_texture(szary)
 			
 func move_right():
 	if(pozycja+1 <= autoload.licza_prob):
 		pozycja += 1
 		for i in range(1,autoload.licza_prob+1):
 			if(i == pozycja):
-				get_child(i-1).set_texture(czarny)
+				get_child(i-1).get_child(0).set_texture(czarny)
 			else:
-				get_child(i-1).set_texture(szary)
+				get_child(i-1).get_child(0).set_texture(szary)

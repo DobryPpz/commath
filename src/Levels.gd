@@ -48,4 +48,5 @@ func _process(delta):
 
 
 func _on_back_released():
+	AudioMenu.play()
 	get_tree().change_scene("res://src/Menu.tscn")

@@ -28,6 +28,7 @@ config/icon="res://icon.png"
 [autoload]
 
 autoload="*res://src/autoload.gd"
+AudioMenu="*res://src/AudioMenu.tscn"
 
 [display]
 

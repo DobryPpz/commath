@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/poziomy/Level_1.gd" type="Script" id=1]
+[ext_resource path="res://grafika/wybor.png" type="Texture" id=2]
+[ext_resource path="res://src/poziomy/Level_class.tscn" type="PackedScene" id=3]
+
+[sub_resource type="TileSet" id=1]
+1/name = "wybor.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 50, 50 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+1/z_index = 0
+
+[node name="Level_1" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Level_class" parent="." instance=ExtResource( 3 )]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 48, 48 )
+format = 1
+tile_data = PoolIntArray( 589827, 1, 0, 589828, 1, 0 )
