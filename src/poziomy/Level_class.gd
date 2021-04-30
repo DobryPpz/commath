@@ -11,9 +11,12 @@ func _ready():
 	przesuwanie = false
 
 func _process(delta):
-	tilmap.position.x = get_local_mouse_position().x-pos_x
-	tilmap.position.y = get_local_mouse_position().y-pos_y
+	tilmap.position.x += get_local_mouse_position().x - pos_x
+	tilmap.position.y += get_local_mouse_position().y - pos_y
+	pos_x = get_local_mouse_position().x
+	pos_y = get_local_mouse_position().y
 	pass
+
 
 func _on_back_pressed():
 	AudioMenu.play()
