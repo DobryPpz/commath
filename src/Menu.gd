@@ -10,6 +10,10 @@ extends Node2D
 func _ready():
 	print(autoload.get_level())
 	print(autoload.level_icons[1])
+	var e = Expression.new()
+	e.parse("3*3")
+	var result = e.execute()
+	print(result)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
