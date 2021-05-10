@@ -4,7 +4,9 @@ var path = "res://data.json"
 
 var licza_prob = 2
 
-var okienka = Array()
+var przesuwanie = false
+var starter = null
+var okienka = []
 
 var level_icons = {
 	1:"res://grafika/panele_leveli/level_1.png",

@@ -1,4 +1,7 @@
 extends Node2D
 
+var goal = 2
+var liczba_liczb = 2
+
 func _ready():
-	pass
+	goal = 2
