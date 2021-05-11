@@ -3,7 +3,7 @@ extends Node2D
 export var val = 1
 onready var untouched = load("res://grafika/kwadracik.png")
 onready var touched = load("res://grafika/wybor.png")
-var symbol
+var symbol = val
 var typ = "liczba"
 
 func _ready():

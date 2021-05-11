@@ -22,3 +22,19 @@ position = Vector2( 216, 456 )
 [node name="Liczba2" parent="TileMap" instance=ExtResource( 5 )]
 position = Vector2( 256, 448 )
 val = 1
+
+[node name="Liczba3" parent="TileMap" instance=ExtResource( 5 )]
+position = Vector2( 200, 272 )
+val = 2
+
+[node name="Liczba4" parent="TileMap" instance=ExtResource( 5 )]
+position = Vector2( 56, 448 )
+val = 3
+
+[node name="Liczba5" parent="TileMap" instance=ExtResource( 5 )]
+position = Vector2( 336, 448 )
+val = 4
+
+[node name="Liczba6" parent="TileMap" instance=ExtResource( 5 )]
+position = Vector2( 200, 552 )
+val = 5

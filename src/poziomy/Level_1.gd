@@ -5,3 +5,4 @@ var liczba_liczb = 2
 
 func _ready():
 	goal = 2
+
