@@ -1,6 +1,5 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://grafika/linia.png" type="Texture" id=1]
 [ext_resource path="res://src/poziomy/Level_class.gd" type="Script" id=2]
 [ext_resource path="res://grafika/back.png" type="Texture" id=3]
 [ext_resource path="res://grafika/move_off.png" type="Texture" id=4]
@@ -16,14 +15,6 @@ font_data = ExtResource( 7 )
 
 [node name="Level_class" type="Node2D"]
 script = ExtResource( 2 )
-
-[node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 400.0
-margin_bottom = 712.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="back" type="TouchScreenButton" parent="."]
 position = Vector2( 28.9264, 653.541 )
